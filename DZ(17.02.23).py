@@ -41,6 +41,18 @@
 # print("Your year of berth is:", easy_way, "or maybe +-1)")
 
 
+# harder way 
+from datetime import datetime
+
+age = input("How old are you?: ")
+
+current_year = datetime.now().year
+
+year_of_birth = current_year - int(age)
+
+print("I think your year of birth is:", year_of_birth)
+
+
 
 
 
