@@ -66,15 +66,29 @@
 
 #Завдання 3 *****************************************************
 
-number_typed = input("Number pls :")
+# number_typed = input("Number pls :")
 
-number_input = int(number_typed)
+# number_input = int(number_typed)
 
-if number_input > 0 :
-    print("Number is positive")
+# if number_input > 0 :
+#     print("Number is positive")
 
-if number_input < 0 :
-     print("Number is negative")
+# if number_input < 0 :
+#      print("Number is negative")
 
-if number_input == 0 :
-     print("Number is equal to zero")
+# if number_input == 0 :
+#      print("Number is equal to zero")
+
+#Завдання 4 *****************************************************
+
+number1 = input("Pls choose first number :")
+
+number2 = input("Pls choose second number :")
+
+if number1 == number2 :
+    
+    print("Numbers are equal")
+
+else: 
+     
+     print("Numbers are not equal")
