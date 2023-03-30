@@ -8,11 +8,9 @@ user = {
 
 def monster_finding():
     which_monster = randint(1, 3)
-    monsters[''] = which_monster 
 
     print(which_monster)
     
-
 
 
 monsters = [
@@ -38,7 +36,7 @@ monsters = [
     "mana" : 10
     }
 ]
-
+# monsters['monster_id'] = monsters['monster_name']
 
 
 
@@ -52,5 +50,5 @@ while is_running :
     Answer :  """).lower()
 
     if user_choose == "a" :
-        print(monster_finding)
+        result = monster_finding
         
