@@ -2,6 +2,7 @@ from func_tools.divide import divide
 from func_tools.sum import sum
 from func_tools.subtruct import subtruct
 from func_tools.multiply import multiply
+from func_tools.calcs import calcs
 
 is_running = True
 
@@ -14,13 +15,29 @@ while is_running :
 
     if user_choose == "y":
         operator = input("Choose: +, -, *, or /  ")
-        num1 = float(input("Choose first number: "))
-        num2 = float(input("Choose second number: "))
+        a = float(input("Choose first number: "))
+        b = float(input("Choose second number: "))
     
-    elif user_choose == "n":
-        is_running = False
-    else :
-        continue
+    if user_choose == "n":
+        break
+    #     is_running = False
+    # else :
+    #     continue
+    
+    if operator == "+" :
+        print(a, "+" , b , "=" , sum(a , b))
+    
+    if operator == "-" :
+        print(a, "-" , b , "=" , subtruct(a , b))
+
+    if operator == "*" :
+        print(a, "*" , b , "=" , multiply(a , b))
+
+    if operator == "/" :
+        print(a, "/" , b , "=" , divide(a , b))
+    
+
+
 
 
 # if operator == "+":
