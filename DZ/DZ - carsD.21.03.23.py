@@ -53,6 +53,7 @@ def exit() :
 
 
 class Car() :
+    
     def __init__(self , label , price , color , wheels=str(4) , number=str(random.randint(1000 , 9999))):
         self.label = label
         self.price = price
